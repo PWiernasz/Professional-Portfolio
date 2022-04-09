@@ -1,0 +1,180 @@
+:root {
+    --primary-color: #ff1d92;
+    --secondary-color: #024e76;
+    --tertiary-color: black;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    color: var(--tertiary-color);
+    font-family: Helvetica, Arial, sans-serif;
+  }  
+
+.Section-Title {
+    min-width: 150px;
+    border-Right: 3px solid;
+    text-align: end;
+    float: Left;
+    flex: 1;
+    padding: 0px 5px 0px 10px;   
+
+}
+
+  header {
+    padding: 20px 35px;
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-size: cover;
+  }
+
+  header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  header a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  
+  header nav {
+    margin: 7px 0;
+  }
+  
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-decoration: underline;
+  }
+  
+  header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+  }
+
+  .about {
+    display: flex;
+
+    padding-top: 20px;
+
+  }
+
+
+
+
+  .about p {
+      padding: 0px 15px;
+      float: left;
+      width: 95%;
+
+
+  }
+
+  .projects {
+
+    padding: 0px 15px;
+    width: 100%;
+
+  }
+
+  .projects img {
+    border: 5px solid #555;
+  }
+
+  .secondary-projects {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+
+  .card {
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    
+  }
+  
+  
+  .card img {
+    width: 300px;
+    height: 200px;
+    
+  }
+
+  .text-block {
+    position: absolute;
+    bottom: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 5px;
+    padding-right: 20px;
+    border-left: none;
+  }
+  
+
+
+  .contact {
+ 
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+
+  }
+
+
+
+
+  .contact div ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+  
+  }
+  
+  .contact div ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-decoration: underline;
+  }
+
+  /* UTILITIES */
+.text-left {
+    text-align: left;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .flex-row {
+    display: flex;
+  }
